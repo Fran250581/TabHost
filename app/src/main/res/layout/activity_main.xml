@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.fran.com.tabhost.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:id="@+id/tab1Layout"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="esto está dentro de una pestaña"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tab2Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="esto está dentro de otra pestaña" />
+            <TextView
+                android:id="@+id/tab3Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="esto está en la tercera pestaña" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
